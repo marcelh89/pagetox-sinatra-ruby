@@ -12,4 +12,6 @@ gem install pdfkit
 ```
 
 ###Run###
+```
 ruby pagetox.rb
+```
