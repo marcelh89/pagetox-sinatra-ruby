@@ -10,6 +10,11 @@ gem install imgkit
 gem install pdfkit
 
 ```
+###2nd Dependencies###
+ * **Automatic**: `sudo imgkit --install-wkhtmltoimage`
+ install latest version into /usr/local/bin
+ (overwrite defaults with e.g. ARCHITECTURE=amd64 TO=/home/foo/bin)
+ * By hand: http://wkhtmltopdf.org/downloads.html
 
 ###Run###
 ```
