@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #canvas {
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            background-color: #CCC;
+            position: relative;
+        }
+
+        #canvas h1 {
+            font-family: Courier;
+            font-size: 80px;
+            font-weight: bold;
+            color: #000;
+            opacity: 0.75;
+            width: 400px;
+            height: 100px;
+            position: absolute;
+            left: 50px;
+            top: 210px;
+            z-index: 5;
+            text-align: center;
+        }
+
+        #canvas h1 em {
+            color: #F00;
+            font-style: normal;
+        }
+
+        #canvas a#repo {
+            position: absolute;
+            display: inline-block;
+            height: 28px;
+            width: 180px;
+            color: #FFF;
+            background-color: #000;
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 28px;
+            text-align: center;
+            text-decoration: none;
+            -webkit-transform: rotate(-90deg);
+            right: -76px;
+            top: 236px;
+            z-index: 10;
+        }
+
+        #flowers {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 500px;
+            height: 500px;
+            overflow:hidden;
+        }
+
+        #lorem {
+            color: #000;
+            font-family: Arial;
+            font-size: 12px;
+            line-height: 1.4em;
+            text-align: justify;
+            width: 500px;
+            height: 500px;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div id="canvas">
+    <h1>PDF<em>Kit</em></h1>
+
+    <div id='flowers'></div>
+
+    <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna.</p
+    <a id="repo" href="http://github.com/jdpace/pdfkit">github.com/jdpace/pdfkit</a>
+</div>
+<script src="http://github.com/DmitryBaranovskiy/raphael/blob/master/raphael-min.js?raw=true&1ljkj" type="text/javascript"></script>
+<script type="text/javascript">
+    function flower(paper, x, y) {
+        var flower = paper.set();
+
+        flower.push(
+                petal(0,x,y,paper),
+                petal(90,x,y,paper),
+                petal(180,x,y,paper),
+                petal(270,x,y,paper)
+        );
+        flower.rotate(45)
+        return(flower)
+    }
+
+    function petal(angle, x, y, paper) {
+        var side = paper.width / 10;
+
+        var triangle = paper.path("M"+x+" "+y+"L"+(x+side)+" "+(y+side)+"L"+(x+(side*2))+" "+y+"Z");
+        triangle.attr({fill: randomColor()});
+        triangle.rotate(angle,x,y);
+    }
+
+    function stringOfFlowers(paper,x,y,dir) {
+
+        for(i=1;i<=4;i++) {
+            var offset = paper.width / 5;
+            var coX = x + (offset * i);
+            var coY = y + (offset * i * dir);
+            flower(paper,coX,coY);
+        }
+    }
+
+    function randomColor() {
+        return('rgb('+Math.floor(Math.random() * 255)+','+Math.floor(Math.random() * 255)+','+Math.floor(Math.random() * 255)+')');
+    }
+
+    var paper = Raphael('flowers', 500, 500);
+    stringOfFlowers(paper, 0, 0,   +1);
+    stringOfFlowers(paper, 0, 500, -1);
+</script>
+</body>
+</html>

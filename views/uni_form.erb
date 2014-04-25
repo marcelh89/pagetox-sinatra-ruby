@@ -1,0 +1,16 @@
+<h1>HTML --> Image/PDF</h1>
+<form action="/new_choice" method="post">
+    <p>
+        <select name="chose_an_option"> Chose an Option
+            <option value="0">URL --> PNG</option>
+            <option value="1">HTML --> PNG</option>
+            <option value="2">HTML --> IMG</option>
+            <option value="3">HTML --> PDF</option>
+        </select>
+    </p>
+    <textarea name="html" style="width: 400px; height: 200px;"  ><%= File.read("./views/simple.html") %></textarea>
+    <input type="submit">
+</form>
+
+
+
