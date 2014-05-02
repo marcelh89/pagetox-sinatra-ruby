@@ -15,8 +15,19 @@ gem install pdfkit
  install latest version into /usr/local/bin
  (overwrite defaults with e.g. ARCHITECTURE=amd64 TO=/home/foo/bin)
  * By hand: http://wkhtmltopdf.org/downloads.html
+ * 
+ 
+
+###change server runtime###
+gem install 'thin'
 
 ###Run###
 ```
 ruby pagetox.rb
+```
+
+###Run with Puma ###
+just type 
+```
+puma
 ```
