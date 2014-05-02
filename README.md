@@ -9,6 +9,9 @@ bundle install
 ```
 ###2nd Dependencies###
 copy binaries from lib folder to /usr/local/bin/
+```
+cp ./lib/* /usr/local/bin/
+```
 
 ###Run on Thin###
 ```
