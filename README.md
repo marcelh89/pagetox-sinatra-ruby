@@ -5,9 +5,7 @@ ruby api for html to image and pdf conversion
 
 ###Installation###
 ```
-gem install sinatra
-gem install imgkit
-gem install pdfkit
+bundle install
 
 ```
 ###2nd Dependencies###
