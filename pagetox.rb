@@ -4,6 +4,8 @@ require 'sinatra'
 require 'imgkit'
 require 'pdfkit'
 
+class Pumatra < Sinatra::Base
+
 get '/' do
   erb :form
 end
@@ -38,4 +40,10 @@ end
 
 not_found do
   halt 404, 'page not found'
+end
+
+end
+
+if __FILE__ == $0
+  Pumatra.run!
 end
