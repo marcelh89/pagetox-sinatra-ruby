@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+      title Pagetox with Ruby and Sinatraframework
+
+    body
+      h1 URL --> PNG
+      form action="/urltopng" method="post"
+        input type="url" name="url" value="http://www.google.de"
+        input type="submit"
+
+      h1 HTML --> PNG
+      form action="/htmltopng" method="post"
+        textarea name="html"
+            == slim :simple
+        input type="submit"
+
+      h1 HTML --> JPG
+      form action="/htmltojpg" method="post"
+         textarea name="html"
+            == slim :simple
+         input type="submit"
+
+      h1 HTML --> PDF
+      form action="/htmltopdf" method="post"
+         textarea name="html"
+            == slim :simple
+         input type="submit"
+
+      h1 HTMLwithRaphael.js Graphic --> PDF
+      form action="/htmlraphaeltopdf" method="post"
+          textarea name="html" style="width:600px; height: 800px;"
+            == erb :raphael
+          input type="submit"
+
+
+

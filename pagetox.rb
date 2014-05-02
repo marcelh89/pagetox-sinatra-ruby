@@ -2,12 +2,15 @@
 
 require 'sinatra'
 require 'imgkit'
+require 'slim'
 require 'pdfkit'
+require 'sinatra/reloader' if development?
 
 class Pumatra < Sinatra::Base
 
 get '/' do
-  erb :form
+  #erb :form
+  slim :form
 end
 
 post '/urltopng' do
